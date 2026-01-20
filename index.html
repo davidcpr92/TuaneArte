@@ -6,10 +6,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <meta name="description" content="Tuane Arte é muralista e artista urbana em Florianópolis. Murais artísticos, comerciais, personalização e oficinas.">
-  <meta name="author" content="Tuane Arte">
-
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -22,7 +18,6 @@
       color: #1a1a1a;
     }
 
-    /* HEADER */
     header {
       position: fixed;
       top: 0;
@@ -50,11 +45,8 @@
       text-transform: uppercase;
     }
 
-    nav a:hover { color: #6b7b6a; }
-
-    /* HERO */
     .hero {
-      height: 90vh;
+      height: 85vh;
       background: url("img/murais/tinta-rosa.jpg") center / cover no-repeat;
       display: flex;
       align-items: center;
@@ -68,23 +60,15 @@
       max-width: 520px;
     }
 
-    h1 { font-size: 40px; margin-bottom: 12px; }
-    h2 { font-size: 30px; margin-bottom: 16px; }
-
-    /* SECTIONS */
     section {
       max-width: 1200px;
       margin: auto;
-      padding: 64px 24px;
+      padding: 56px 24px;
     }
 
-    .section-text {
-      max-width: 680px;
-      margin-bottom: 32px;
-      line-height: 1.7;
-    }
+    h1 { font-size: 40px; }
+    h2 { font-size: 30px; margin-bottom: 20px; }
 
-    /* GALLERY */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -105,19 +89,11 @@
       transform: translateY(0);
     }
 
-    #sobre, #contato { background: #ffffff; }
-
     footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px;
       border-top: 1px solid #ddd;
       font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      h1 { font-size: 32px; }
-      h2 { font-size: 26px; }
-      .hero { padding: 0 24px; }
     }
   </style>
 </head>
@@ -132,8 +108,6 @@
       <a href="#comerciais">Comerciais</a>
       <a href="#personalizacao">Personalização</a>
       <a href="#oficinas">Oficinas</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
     </div>
   </nav>
 </header>
@@ -141,41 +115,38 @@
 <section class="hero">
   <div class="hero-content">
     <h1>Murais que transformam espaços</h1>
-    <p>Arte urbana autoral conectando natureza, arquitetura e identidade.</p>
+    <p>Arte urbana autoral conectando cidade, natureza e identidade.</p>
   </div>
 </section>
 
 <section id="murais">
   <h2>Murais Artísticos</h2>
   <div class="gallery">
-    <img src="img/murais/mural-1.jpg" alt="Mural artístico colorido" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/mural-2.jpg" alt="Mural artístico com flores" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/mural-verasabina-1.jpg" alt="Mural em edifício residencial" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/muralverasabino-2.jpg" alt="Mural urbano em fachada" onerror="this.src='img/murais/tinta-rosa.jpg'">
+    <img src="img/murais/mural-1.jpg" alt="Mural artístico em fachada residencial">
+    <img src="img/murais/mural-2.jpg" alt="Mural artístico com flores">
+    <img src="img/murais/mural-verasabina-1.jpg" alt="Mural em edifício residencial">
+    <img src="img/murais/muralverasabina-2.jpg" alt="Mural urbano em prédio">
   </div>
 </section>
 
 <section id="comerciais">
   <h2>Murais Comerciais</h2>
   <div class="gallery">
-    <img src="img/murais/mural-comercial-1.jpg" alt="Mural comercial interno" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/mural-comercial-2.jpg" alt="Mural comercial em fachada" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/escadaria1.jpg" alt="Arte em escadaria urbana" onerror="this.src='img/murais/tinta-rosa.jpg'">
+    <img src="img/murais/mural-comercial-1.jpg" alt="Mural comercial em ambiente interno">
+    <img src="img/murais/mural-comercial-2.jpg" alt="Mural comercial em fachada">
+    <img src="img/murais/escadaria1.jpg" alt="Intervenção artística em escadaria">
   </div>
 </section>
 
 <section id="personalizacao">
   <h2>Personalização Artística</h2>
   <div class="gallery">
-    <img src="img/murais/copo-personalizado-1.jpg" alt="Copo personalizado" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/copos-personalizado-1.jpg" alt="Copos personalizados" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/taca-personalizada-1.jpg" alt="Taça personalizada" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/tacas-personalizadas-1.jpg" alt="Taças personalizadas" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/prancha-personalizada-1.jpg" alt="Prancha personalizada" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/prancha-personalizada-2.jpg" alt="Prancha de surf artística" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/prancha-personalizada-3.jpg" alt="Arte em prancha" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/prancha-personalizada-4.jpg" alt="Prancha pintada" onerror="this.src='img/murais/tinta-rosa.jpg'">
-    <img src="img/murais/patinete-personalizado-1.jpg" alt="Patinete personalizado" onerror="this.src='img/murais/tinta-rosa.jpg'">
+    <img src="img/murais/copo-personalizado-1.jpeg" alt="Copo personalizado pintado à mão">
+    <img src="img/murais/copos-personalizado-1.jpeg" alt="Conjunto de copos personalizados">
+    <img src="img/murais/taca-personalizada-1.jpg" alt="Taça personalizada">
+    <img src="img/murais/tacas-personalizadas-1.jpg" alt="Conjunto de taças personalizadas">
+    <img src="img/murais/prancha-personalizada-1.jpeg" alt="Prancha personalizada com arte">
+    <img src="img/murais/patinete-personalizado-1.png" alt="Patinete personalizado com arte urbana">
   </div>
 </section>
 
@@ -188,32 +159,20 @@
   </div>
 </section>
 
-<section id="sobre">
-  <h2>Sobre</h2>
-  <p class="section-text">
-    Tuane é artista urbana e muralista atuando desde 2018 com murais,
-    projetos comerciais, personalizações e ações educativas.
-  </p>
-</section>
-
-<section id="contato">
-  <h2>Contato</h2>
-  <p>
-    Instagram: <a href="https://instagram.com/tuanearte" target="_blank">@tuanearte</a><br>
-    Email: <a href="mailto:artetuane@gmail.com">artetuane@gmail.com</a>
-  </p>
-</section>
-
 <footer>
-  © Tuane Arte — Murais Artísticos
+  © Tuane Arte
 </footer>
 
 <script>
   const imgs = document.querySelectorAll('.gallery img');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) e.target.classList.add('visible');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.2 });
 
-  imgs.f
+  imgs.forEach(img => observer.observe(img));
+</script>
+
+</body>
+</html>
