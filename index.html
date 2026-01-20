@@ -2,21 +2,35 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Tuane Arte — Murais Artísticos</title>
+  <title>Tuane Arte | Murais Artísticos, Comerciais e Oficinas</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tuane Arte é muralista e artista urbana em Florianópolis. Murais artísticos personalizados para residências e comércios.">
+
+  <!-- SEO -->
+  <meta name="description" content="Tuane Arte é muralista e artista urbana em Florianópolis. Murais artísticos e comerciais, personalização de objetos e oficinas de arte urbana.">
+  <meta name="keywords" content="muralista, arte urbana, grafite, murais comerciais, personalização artística, oficinas de arte, Florianópolis">
+  <meta name="author" content="Tuane Arte">
+
+  <!-- Open Graph (Instagram / WhatsApp preview) -->
+  <meta property="og:title" content="Tuane Arte | Murais Artísticos">
+  <meta property="og:description" content="Murais, arte urbana, personalização e oficinas. Arte que transforma espaços.">
+  <meta property="og:type" content="website">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       color: #1a1a1a;
       background: #f6f6f4;
+      scroll-behavior: smooth;
     }
 
+    /* HEADER */
     header {
       position: fixed;
       top: 0;
@@ -27,7 +41,7 @@
     }
 
     nav {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: auto;
       padding: 16px 24px;
       display: flex;
@@ -36,7 +50,7 @@
     }
 
     nav strong {
-      font-weight: 600;
+      cursor: pointer;
       letter-spacing: 1px;
     }
 
@@ -53,63 +67,110 @@
       color: #6b7b6a;
     }
 
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 100px 24px;
-    }
-
+    /* HERO */
     .hero {
-      padding-top: 160px;
+      height: 100vh;
+      background: url("https://via.placeholder.com/1600x1000") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
     }
 
-    .hero h1 {
-      font-size: 44px;
-      font-weight: 600;
+    .hero-content {
+      max-width: 600px;
+      background: rgba(246,246,244,0.9);
+      padding: 32px;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    h1 {
+      font-size: 42px;
       margin-bottom: 16px;
     }
 
     .hero p {
-      max-width: 640px;
       font-size: 18px;
-      line-height: 1.7;
-      color: #444;
+      line-height: 1.6;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1300px;
+      margin: auto;
+      padding: 120px 24px;
     }
 
     h2 {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    .section-text {
+      max-width: 700px;
       margin-bottom: 48px;
-      font-size: 30px;
-      font-weight: 600;
+      line-height: 1.7;
     }
 
-    .grid {
+    /* IMAGE GRIDS */
+    .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
     }
 
-    .grid img {
+    .gallery img {
       width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 6px;
+      height: 80vh;
+      object-fit: cover;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
     }
 
+    .gallery img.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* WHITE SECTIONS */
     #sobre, #contato {
       background: #ffffff;
     }
 
-    footer {
-      border-top: 1px solid #ddd;
-      padding: 48px 24px;
-      text-align: center;
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
       font-size: 14px;
-      background: #f6f6f4;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 999;
     }
 
-    footer a {
-      color: #1a1a1a;
-      text-decoration: none;
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 48px 24px;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding: 0 24px; }
+      .gallery img { height: 50vh; }
     }
   </style>
 </head>
@@ -118,41 +179,82 @@
 
 <header>
   <nav>
-    <strong>Tuane Arte</strong>
+    <strong onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Tuane Arte</strong>
     <div>
-      <a href="#inicio">Início</a>
       <a href="#murais">Murais</a>
+      <a href="#comerciais">Comerciais</a>
+      <a href="#personalizacao">Personalização</a>
+      <a href="#oficinas">Oficinas</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
     </div>
   </nav>
 </header>
 
-<section id="inicio" class="hero">
-  <h1>Murais artísticos que transformam espaços</h1>
-  <p>
-    Tuane Arte é artista urbana e muralista baseada em Florianópolis.
-    Desenvolve murais personalizados para residências, comércios,
-    condomínios e instituições, conectando arte, natureza e cidade.
-  </p>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Murais que transformam espaços</h1>
+    <p>
+      Arte urbana personalizada para residências, comércios e instituições.
+      Murais autorais que conectam identidade, cidade e natureza.
+    </p>
+  </div>
 </section>
 
 <section id="murais">
-  <h2>Murais</h2>
-  <div class="grid">
-    <img src="https://via.placeholder.com/800x600" alt="Mural artístico">
-    <img src="https://via.placeholder.com/800x600" alt="Mural artístico">
-    <img src="https://via.placeholder.com/800x600" alt="Mural artístico">
-    <img src="https://via.placeholder.com/800x600" alt="Mural artístico">
+  <h2>Murais Artísticos</h2>
+  <p class="section-text">
+    Murais autorais desenvolvidos para espaços privados e públicos,
+    valorizando arquitetura, paisagem e identidade do local.
+  </p>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/1200x1600" alt="Mural artístico">
+    <img src="https://via.placeholder.com/1200x1600" alt="Mural artístico">
+  </div>
+</section>
+
+<section id="comerciais">
+  <h2>Murais Comerciais</h2>
+  <p class="section-text">
+    Projetos artísticos para fachadas, interiores e ambientes comerciais,
+    fortalecendo a marca e criando experiências visuais únicas.
+  </p>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/1200x1600" alt="Mural comercial">
+    <img src="https://via.placeholder.com/1200x1600" alt="Mural comercial">
+  </div>
+</section>
+
+<section id="personalizacao">
+  <h2>Personalização Artística</h2>
+  <p class="section-text">
+    Personalização de objetos, mobiliários e superfícies com arte autoral,
+    criando peças únicas e exclusivas.
+  </p>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/1200x1600" alt="Objeto personalizado">
+    <img src="https://via.placeholder.com/1200x1600" alt="Objeto personalizado">
+  </div>
+</section>
+
+<section id="oficinas">
+  <h2>Oficinas e Ações Educativas</h2>
+  <p class="section-text">
+    Oficinas de arte urbana, grafite e processos criativos para escolas,
+    projetos sociais, eventos culturais e empresas.
+  </p>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/1200x1600" alt="Oficina de arte urbana">
+    <img src="https://via.placeholder.com/1200x1600" alt="Oficina de arte urbana">
   </div>
 </section>
 
 <section id="sobre">
   <h2>Sobre</h2>
-  <p>
-    Artista urbana e muralista, natural de Laguna (SC) e residente em Florianópolis.
-    Atua desde 2018 com murais, grafite e projetos artísticos que exploram a
-    relação entre cidade, natureza e imaginário coletivo.
+  <p class="section-text">
+    Tuane é artista urbana e muralista, natural de Laguna (SC) e residente em Florianópolis.
+    Atua desde 2018 desenvolvendo murais, projetos comerciais, personalizações
+    e oficinas de arte urbana.
   </p>
 </section>
 
@@ -166,10 +268,27 @@
   </p>
 </section>
 
+<a class="whatsapp" href="https://wa.me/55XXXXXXXXXX" target="_blank">
+  WhatsApp
+</a>
+
 <footer>
-  © Tuane Arte — Todos os direitos reservados
+  © Tuane Arte — Murais Artísticos, Comerciais e Oficinas
 </footer>
+
+<script>
+  const images = document.querySelectorAll('.gallery img');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  images.forEach(img => observer.observe(img));
+</script>
 
 </body>
 </html>
-
