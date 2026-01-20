@@ -4,90 +4,111 @@
   <meta charset="UTF-8">
   <title>Tuane Arte — Murais Artísticos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tuane Arte é muralista e artista urbana em Florianópolis. Murais artísticos personalizados para residências, comércios e instituições.">
+  <meta name="description" content="Tuane Arte é muralista e artista urbana em Florianópolis. Murais artísticos personalizados para residências e comércios.">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #111;
-      background: #fff;
+      font-family: 'Montserrat', sans-serif;
+      color: #1a1a1a;
+      background: #f6f6f4;
     }
 
     header {
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(255,255,255,0.95);
-      border-bottom: 1px solid #eee;
+      background: rgba(246,246,244,0.95);
+      border-bottom: 1px solid #ddd;
       z-index: 1000;
     }
 
     nav {
       max-width: 1200px;
       margin: auto;
-      padding: 15px 20px;
+      padding: 16px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
+    nav strong {
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
     nav a {
       text-decoration: none;
-      color: #111;
-      margin-left: 20px;
-      font-size: 14px;
+      color: #1a1a1a;
+      margin-left: 24px;
+      font-size: 13px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
+    }
+
+    nav a:hover {
+      color: #6b7b6a;
     }
 
     section {
       max-width: 1200px;
       margin: auto;
-      padding: 80px 20px;
+      padding: 100px 24px;
     }
 
     .hero {
-      padding-top: 140px;
+      padding-top: 160px;
     }
 
     .hero h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 44px;
+      font-weight: 600;
+      margin-bottom: 16px;
     }
 
     .hero p {
-      max-width: 600px;
+      max-width: 640px;
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    h2 {
+      margin-bottom: 48px;
+      font-size: 30px;
+      font-weight: 600;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      gap: 24px;
     }
 
     .grid img {
       width: 100%;
       height: auto;
       display: block;
+      border-radius: 6px;
     }
 
-    h2 {
-      margin-bottom: 40px;
-      font-size: 28px;
+    #sobre, #contato {
+      background: #ffffff;
     }
 
     footer {
-      border-top: 1px solid #eee;
-      padding: 40px 20px;
+      border-top: 1px solid #ddd;
+      padding: 48px 24px;
       text-align: center;
       font-size: 14px;
+      background: #f6f6f4;
     }
 
     footer a {
-      color: #111;
+      color: #1a1a1a;
       text-decoration: none;
     }
   </style>
@@ -99,6 +120,7 @@
   <nav>
     <strong>Tuane Arte</strong>
     <div>
+      <a href="#inicio">Início</a>
       <a href="#murais">Murais</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
@@ -106,7 +128,7 @@
   </nav>
 </header>
 
-<section class="hero">
+<section id="inicio" class="hero">
   <h1>Murais artísticos que transformam espaços</h1>
   <p>
     Tuane Arte é artista urbana e muralista baseada em Florianópolis.
@@ -137,8 +159,10 @@
 <section id="contato">
   <h2>Contato</h2>
   <p>
-    Instagram: <a href="https://instagram.com/tuanearte" target="_blank">@tuanearte</a><br>
-    Email: <a href="mailto:artetuane@gmail.com">artetuane@gmail.com</a>
+    Instagram:
+    <a href="https://instagram.com/tuanearte" target="_blank">@tuanearte</a><br><br>
+    Email:
+    <a href="mailto:artetuane@gmail.com">artetuane@gmail.com</a>
   </p>
 </section>
 
@@ -148,3 +172,4 @@
 
 </body>
 </html>
+
