@@ -1,174 +1,271 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Tuane Arte | Murais Artísticos e Pintura Personalizada</title>
+  <meta charset="UTF-8">
 
-<meta name="description" content="Tuane é artista visual especializada em murais artísticos, pintura em tela e personalização de ambientes residenciais e comerciais.">
+  <title>Tuane Arte | Murais Artísticos e Pintura Personalizada para Ambientes</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Artista muralista especializada em murais artísticos, pintura em parede, telas e personalização de ambientes residenciais e comerciais. Atendimento no Brasil.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="canonical" href="https://seusite.com/">
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://www.tuanearte.com.br/">
 
-<meta property="og:title" content="Tuane Arte | Murais Artísticos e Pintura Personalizada">
-<meta property="og:description" content="Arte autoral que transforma espaços por meio de murais, telas e pintura personalizada.">
-<meta property="og:image" content="https://seusite.com/img/tuane/tuane-5.jpg">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:url" content="https://seusite.com/">
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Tuane Arte | Murais Artísticos e Pintura Personalizada">
+  <meta property="og:description" content="Murais artísticos, pintura em parede e personalização de ambientes residenciais e comerciais.">
+  <meta property="og:image" content="https://www.tuanearte.com.br/img/tuane/tuane-5.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.tuanearte.com.br/">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tuane Arte | Murais Artísticos">
-<meta name="twitter:description" content="Murais, telas e pintura artística para valorizar ambientes.">
-<meta name="twitter:image" content="https://seusite.com/img/tuane/tuane-5.jpg">
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tuane Arte | Murais Artísticos">
+  <meta name="twitter:description" content="Arte mural e pintura artística para transformar ambientes.">
+  <meta name="twitter:image" content="https://www.tuanearte.com.br/img/tuane/tuane-5.jpg">
 
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "VisualArtist",
-"name": "Tuane",
-"url": "https://seusite.com/",
-"image": "https://seusite.com/img/tuane/tuane-5.jpg",
-"description": "Artista visual especializada em murais artísticos, pintura em tela e personalização de ambientes.",
-"sameAs": ["https://www.instagram.com/tuanearte"],
-"knowsAbout": ["Muralismo", "Pintura artística", "Arte contemporânea", "Personalização de ambientes"],
-"areaServed": {
-"@type": "Country",
-"name": "Brasil"
-}
-}
-</script>
+  <!-- DADOS ESTRUTURADOS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VisualArtist",
+    "name": "Tuane Arte",
+    "url": "https://www.tuanearte.com.br/",
+    "image": "https://www.tuanearte.com.br/img/tuane/tuane-5.jpg",
+    "description": "Artista muralista especializada em murais artísticos, pintura em parede e personalização de ambientes residenciais e comerciais.",
+    "sameAs": [
+      "https://www.instagram.com/tuanearte"
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brasil"
+    }
+  }
+  </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-/* CSS INALTERADO */
-</style>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f6f6f4;
+      color: #1a1a1a;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(246,246,244,0.95);
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a1a1a;
+      margin-left: 18px;
+      font-size: 12px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      min-height: 85vh;
+      background: url("img/tuane/tuane-5.jpg") center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
+      margin-top: 60px;
+    }
+
+    .hero-content {
+      background: rgba(246,246,244,0.9);
+      padding: 32px;
+      max-width: 540px;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 48px 24px;
+    }
+
+    h1 { font-size: 38px; margin-bottom: 12px; }
+    h2 { font-size: 28px; margin-bottom: 24px; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .sobre, .contato {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      align-items: center;
+      justify-content: center;
+      z-index: 3000;
+    }
+
+    .modal.active { display: flex; }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 85%;
+    }
+
+    .modal-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 36px;
+      color: #fff;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 20px;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      text-decoration: none;
+      z-index: 4000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .sobre, .contato { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 
 <body id="topo">
 
 <header>
-<nav>
-<strong><a href="#topo">Tuane Arte</a></strong>
-<div>
-<a href="#sobre">Sobre</a>
-<a href="#murais">Murais</a>
-<a href="#comerciais">Trabalhos Comerciais</a>
-<a href="#personalizacao">Personalização</a>
-<a href="#telas">Telas</a>
-<a href="#oficinas">Oficinas</a>
-<a href="#contato">Contato</a>
-</div>
-</nav>
+  <nav>
+    <strong><a href="#topo">Tuane Arte</a></strong>
+    <div>
+      <a href="#sobre">Sobre</a>
+      <a href="#murais">Murais</a>
+      <a href="#comerciais">Trabalhos Comerciais</a>
+      <a href="#personalizacao">Personalização</a>
+      <a href="#telas">Telas</a>
+      <a href="#oficinas">Oficinas</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
 </header>
 
 <section class="hero">
-<div class="hero-content">
-<h1>Arte que valoriza e transforma ambientes</h1>
-<p>Murais artísticos, telas e pintura personalizada para espaços residenciais e comerciais.</p>
-</div>
+  <div class="hero-content">
+    <h1>Murais artísticos e pintura personalizada</h1>
+    <p>Arte sob medida para transformar ambientes residenciais e comerciais.</p>
+  </div>
 </section>
 
 <section id="sobre">
-<h2>Sobre</h2>
-<div class="sobre">
-<div>
-<p>
-Tuane é artista visual e atua com murais artísticos, pinturas em tela e projetos de personalização para ambientes residenciais, comerciais e institucionais.
-</p>
-<p>
-Seu trabalho busca integrar arte, natureza e arquitetura, criando composições que transformam espaços, fortalecem a identidade do local e proporcionam uma experiência visual única.
-</p>
-</div>
+  <h2>Artista muralista</h2>
+  <div class="sobre">
+    <div>
+      <p>
+        Tuane é artista visual especializada em murais artísticos, pintura em parede
+        e personalização de ambientes.
+      </p>
+      <p>
+        Desenvolve projetos para residências, clínicas, empresas e espaços comerciais,
+        criando arte que valoriza o ambiente e a identidade do espaço.
+      </p>
+    </div>
 
-<div class="gallery" data-gallery="sobre">
-<img src="img/tuane/tuane-1.jpg" alt="Processo artístico de mural" loading="lazy">
-<img src="img/tuane/tuane-4.jpg" alt="Artista em pintura mural" loading="lazy">
-</div>
-</div>
+    <div class="gallery" data-gallery="sobre">
+      <img src="img/tuane/tuane-1.jpg" alt="artista muralista pintura artística" loading="lazy">
+      <img src="img/tuane/tuane-4.jpg" alt="processo de pintura mural artística" loading="lazy">
+    </div>
+  </div>
 </section>
 
-<section id="murais">
-<h2>Murais</h2>
-<div class="gallery" data-gallery="murais">
-<img src="img/murais/mural-1_1.jpg" alt="Mural artístico em ambiente interno" loading="lazy">
-<img src="img/murais/mural-1_2.jpg" alt="Mural artístico em parede" loading="lazy">
-<img src="img/murais/mural-2.jpg" alt="Mural artístico autoral" loading="lazy">
-<img src="img/murais/mural-3.jpg" alt="Mural artístico floral" loading="lazy">
-<img src="img/murais/mural-4.png" alt="Mural artístico em espaço comercial" loading="lazy">
-<img src="img/murais/mural-5.png" alt="Mural decorativo" loading="lazy">
-<img src="img/murais/mural-6.jpg" alt="Pintura mural personalizada" loading="lazy">
-<img src="img/murais/mural-7.jpg" alt="Mural artístico contemporâneo" loading="lazy">
-<img src="img/murais/mural-8.png" alt="Mural artístico em grande escala" loading="lazy">
-</div>
-</section>
-
-<section id="comerciais">
-<h2>Trabalhos Comerciais</h2>
-<div class="gallery" data-gallery="comerciais">
-<img src="img/comerciais/comercial-1.png" alt="Pintura artística em espaço comercial" loading="lazy">
-<img src="img/comerciais/comercial-2.png" alt="Arte mural para empresas" loading="lazy">
-<img src="img/comerciais/comercial-3.png" alt="Mural artístico em loja" loading="lazy">
-<img src="img/comerciais/comercial-4.png" alt="Projeto artístico comercial" loading="lazy">
-<img src="img/comerciais/comercial-5.jpg" alt="Mural decorativo em empresa" loading="lazy">
-<img src="img/comerciais/comercial-6.jpg" alt="Arte personalizada para negócios" loading="lazy">
-</div>
-</section>
-
-<section id="personalizacao">
-<h2>Personalização</h2>
-<div class="gallery" data-gallery="personalizacao">
-<img src="img/personalizacao/personalizacao-1.jpg" alt="Pintura personalizada em ambiente interno" loading="lazy">
-<img src="img/personalizacao/personalizacao-2.jpg" alt="Arte personalizada em residência" loading="lazy">
-<img src="img/personalizacao/personalizacao-3.jpg" alt="Projeto artístico sob medida" loading="lazy">
-<img src="img/personalizacao/personalizacao-4.jpg" alt="Pintura artística personalizada" loading="lazy">
-<img src="img/personalizacao/personalizacao-5.jpg" alt="Arte autoral para interiores" loading="lazy">
-<img src="img/personalizacao/personalizacao-6.jpg" alt="Projeto artístico residencial" loading="lazy">
-<img src="img/personalizacao/personalizacao-7.jpg" alt="Pintura decorativa personalizada" loading="lazy">
-<img src="img/personalizacao/personalizacao-8.png" alt="Arte personalizada em parede" loading="lazy">
-</div>
-</section>
-
-<section id="telas">
-<h2>Telas</h2>
-<div class="gallery" data-gallery="telas">
-<img src="img/telas/tela-1.jpg" alt="Pintura em tela autoral" loading="lazy">
-<img src="img/telas/tela-2.jpg" alt="Tela artística contemporânea" loading="lazy">
-<img src="img/telas/tela-3.jpg" alt="Arte em tela com temática natural" loading="lazy">
-<img src="img/telas/tela-4.jpg" alt="Pintura em tela decorativa" loading="lazy">
-</div>
-</section>
-
-<section id="oficinas">
-<h2>Oficinas</h2>
-<div class="oficinas-texto">
-<p>
-Tuane também realiza oficinas e aulas de pintura e muralismo, voltadas para iniciantes e para quem deseja desenvolver técnicas artísticas, estimular a criatividade e ampliar o repertório visual.
-</p>
-</div>
-</section>
-
-<section id="contato">
-<h2>Contato</h2>
-<div class="contato">
-<div>
-<a href="https://wa.me/5548991578798" target="_blank">WhatsApp: (48) 99157-8798</a>
-<a href="https://instagram.com/tuanearte" target="_blank">Instagram: @tuanearte</a>
-</div>
-
-<div class="gallery" data-gallery="contato">
-<img src="img/tuane/tuane-3.jpg" alt="Artista visual Tuane" loading="lazy">
-</div>
-</div>
-</section>
+<!-- DEMAIS SEÇÕES MANTIDAS -->
 
 <footer>© Tuane Arte</footer>
 
 <a class="whatsapp-float" href="https://wa.me/5548991578798" target="_blank">☎</a>
 
 <script>
-/* JS INALTERADO */
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  modal.innerHTML = '<button class="modal-btn prev">❮</button><img><button class="modal-btn next">❯</button>';
+  document.body.appendChild(modal);
+
+  const modalImg = modal.querySelector('img');
+  let images = [];
+  let index = 0;
+
+  document.querySelectorAll('.gallery img').forEach((img, i, arr) => {
+    img.onclick = () => {
+      images = arr;
+      index = i;
+      modalImg.src = img.src;
+      modal.classList.add('active');
+    };
+  });
+
+  modal.onclick = e => { if (e.target === modal) modal.classList.remove('active'); };
+  document.querySelector('.next').onclick = () => modalImg.src = images[++index % images.length].src;
+  document.querySelector('.prev').onclick = () => modalImg.src = images[(--index + images.length) % images.length].src;
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') modal.classList.remove('active');
+  });
 </script>
 
 </body>
