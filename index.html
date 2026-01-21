@@ -5,25 +5,25 @@
 
   <title>Tuane Arte | Murais, Telas e Arte Personalizada</title>
 
-  <meta name="description" content="Tuane é artista visual especializada em murais artísticos, telas e personalização de espaços residenciais e comerciais.">
+  <meta name="description" content="Tuane é artista visual especializada em murais artísticos, telas e personalização de espaços residenciais, comerciais e institucionais.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CANONICAL -->
-  <link rel="canonical" href="https://seusite.com/">
+  <link rel="canonical" href="https://www.tuanearte.com.br/">
 
   <!-- OPEN GRAPH -->
   <meta property="og:title" content="Tuane Arte | Murais e Pintura Artística">
-  <meta property="og:description" content="Arte que transforma espaços através da pintura mural, telas e personalização artística.">
-  <meta property="og:image" content="https://seusite.com/img/tuane/tuane-5.jpg">
+  <meta property="og:description" content="Arte autoral para valorizar espaços residenciais, comerciais e institucionais.">
+  <meta property="og:image" content="https://www.tuanearte.com.br/img/tuane/tuane-5.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:url" content="https://seusite.com/">
+  <meta property="og:url" content="https://www.tuanearte.com.br/">
 
   <!-- TWITTER -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Tuane Arte | Murais e Pintura Artística">
-  <meta name="twitter:description" content="Murais artísticos, telas e personalização de ambientes.">
-  <meta name="twitter:image" content="https://seusite.com/img/tuane/tuane-5.jpg">
+  <meta name="twitter:description" content="Arte autoral para valorizar ambientes.">
+  <meta name="twitter:image" content="https://www.tuanearte.com.br/img/tuane/tuane-5.jpg">
 
   <!-- DADOS ESTRUTURADOS -->
   <script type="application/ld+json">
@@ -31,9 +31,9 @@
     "@context": "https://schema.org",
     "@type": "VisualArtist",
     "name": "Tuane",
-    "url": "https://seusite.com/",
-    "image": "https://seusite.com/img/tuane/tuane-5.jpg",
-    "description": "Artista visual especializada em murais artísticos, pintura em tela e personalização de ambientes.",
+    "url": "https://www.tuanearte.com.br/",
+    "image": "https://www.tuanearte.com.br/img/tuane/tuane-5.jpg",
+    "description": "Artista visual especializada em murais artísticos, pintura em tela e personalização de ambientes residenciais, comerciais e institucionais.",
     "sameAs": [
       "https://www.instagram.com/tuanearte"
     ],
@@ -44,8 +44,8 @@
       "Personalização de ambientes"
     ],
     "areaServed": {
-      "@type": "Country",
-      "name": "Brasil"
+      "@type": "Place",
+      "name": "Florianópolis e região"
     }
   }
   </script>
@@ -54,14 +54,12 @@
 
   <style>
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background: #f6f6f4;
       color: #1a1a1a;
     }
-
     header {
       position: fixed;
       top: 0;
@@ -70,7 +68,6 @@
       border-bottom: 1px solid #ddd;
       z-index: 1000;
     }
-
     nav {
       max-width: 1200px;
       margin: auto;
@@ -79,7 +76,6 @@
       justify-content: space-between;
       align-items: center;
     }
-
     nav a {
       text-decoration: none;
       color: #1a1a1a;
@@ -88,12 +84,7 @@
       letter-spacing: 1.2px;
       text-transform: uppercase;
     }
-
-    nav strong a {
-      text-decoration: none;
-      color: inherit;
-    }
-
+    nav strong a { color: inherit; }
     .hero {
       min-height: 85vh;
       background: url("img/tuane/tuane-5.jpg") center / cover no-repeat;
@@ -102,28 +93,23 @@
       padding: 0 10%;
       margin-top: 60px;
     }
-
     .hero-content {
       background: rgba(246,246,244,0.9);
       padding: 32px;
       max-width: 520px;
     }
-
     section {
       max-width: 1200px;
       margin: auto;
       padding: 48px 24px;
     }
-
     h1 { font-size: 40px; margin-bottom: 12px; }
-    h2 { font-size: 28px; margin-bottom: 24px; }
-
+    h2 { font-size: 28px; margin-bottom: 16px; }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
     }
-
     .gallery img {
       width: 100%;
       aspect-ratio: 4 / 5;
@@ -131,26 +117,16 @@
       border-radius: 8px;
       cursor: pointer;
     }
-
-    .sobre {
+    .sobre, .contato {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 32px;
       align-items: center;
     }
-
-    .sobre p {
+    .sobre p, .oficinas-texto p {
       font-size: 16px;
       line-height: 1.6;
     }
-
-    .contato {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      align-items: center;
-    }
-
     .contato a {
       display: block;
       margin-top: 12px;
@@ -158,13 +134,6 @@
       color: #1a1a1a;
       font-weight: 500;
     }
-
-    .oficinas-texto {
-      max-width: 600px;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
     .modal {
       display: none;
       position: fixed;
@@ -174,15 +143,12 @@
       justify-content: center;
       z-index: 3000;
     }
-
     .modal.active { display: flex; }
-
     .modal img {
       max-width: 90%;
       max-height: 85%;
       border-radius: 8px;
     }
-
     .modal-btn {
       position: absolute;
       top: 50%;
@@ -194,10 +160,8 @@
       cursor: pointer;
       padding: 20px;
     }
-
     .prev { left: 10px; }
     .next { right: 10px; }
-
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -214,18 +178,14 @@
       text-decoration: none;
       z-index: 4000;
     }
-
     footer {
       text-align: center;
       padding: 40px;
       border-top: 1px solid #ddd;
       font-size: 14px;
     }
-
     @media (max-width: 768px) {
-      .sobre, .contato {
-        grid-template-columns: 1fr;
-      }
+      .sobre, .contato { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -249,8 +209,8 @@
 
 <section class="hero">
   <div class="hero-content">
-    <h1>Arte que transforma espaços</h1>
-    <p>Murais, telas e personalizações artísticas.</p>
+    <h1>Murais artísticos e pintura personalizada para ambientes</h1>
+    <p>Arte autoral para valorizar espaços residenciais, comerciais e institucionais.</p>
   </div>
 </section>
 
@@ -259,93 +219,58 @@
   <div class="sobre">
     <div>
       <p>
-        Tuane é artista visual que atua com murais artísticos, pinturas em tela
-        e personalização de ambientes residenciais e comerciais.
+        Tuane é artista visual especializada em murais artísticos, pinturas em tela e projetos de personalização para ambientes residenciais, comerciais e institucionais.
       </p>
       <p>
-        Seu trabalho busca criar conexões entre arte, natureza e espaço,
-        transformando lugares através da pintura.
+        Seu trabalho integra arte, natureza e arquitetura, criando composições que transformam espaços, fortalecem a identidade do ambiente e tornam os locais mais acolhedores.
       </p>
     </div>
-
     <div class="gallery" data-gallery="sobre">
-      <img src="img/tuane/tuane-1.jpg" alt="tuane-1" loading="lazy">
-      <img src="img/tuane/tuane-4.jpg" alt="tuane-4" loading="lazy">
+      <img src="img/tuane/tuane-1.jpg" alt="Artista visual Tuane em processo criativo" loading="lazy">
+      <img src="img/tuane/tuane-4.jpg" alt="Detalhe de mural artístico assinado por Tuane" loading="lazy">
     </div>
   </div>
 </section>
 
 <section id="murais">
   <h2>Murais</h2>
+  <p>Murais artísticos desenvolvidos para residências, comércios, clínicas, condomínios e espaços institucionais, sempre respeitando a identidade do local e o diálogo com o ambiente.</p>
   <div class="gallery" data-gallery="murais">
-    <img src="img/murais/mural-1_1.jpg" alt="mural-1_1" loading="lazy">
-    <img src="img/murais/mural-1_2.jpg" alt="mural-1_2" loading="lazy">
-    <img src="img/murais/mural-2.jpg" alt="mural-2" loading="lazy">
-    <img src="img/murais/mural-3.jpg" alt="mural-3" loading="lazy">
-    <img src="img/murais/mural-4.png" alt="mural-4" loading="lazy">
-    <img src="img/murais/mural-5.png" alt="mural-5" loading="lazy">
-    <img src="img/murais/mural-6.jpg" alt="mural-6" loading="lazy">
-    <img src="img/murais/mural-7.jpg" alt="mural-7" loading="lazy">
-    <img src="img/murais/mural-8.png" alt="mural-8" loading="lazy">
+    <!-- imagens -->
   </div>
 </section>
 
 <section id="comerciais">
   <h2>Trabalhos Comerciais</h2>
-  <div class="gallery" data-gallery="comerciais">
-    <img src="img/comerciais/comercial-1.png" alt="comercial-1" loading="lazy">
-    <img src="img/comerciais/comercial-2.png" alt="comercial-2" loading="lazy">
-    <img src="img/comerciais/comercial-3.png" alt="comercial-3" loading="lazy">
-    <img src="img/comerciais/comercial-4.png" alt="comercial-4" loading="lazy">
-    <img src="img/comerciais/comercial-5.jpg" alt="comercial-5" loading="lazy">
-    <img src="img/comerciais/comercial-6.jpg" alt="comercial-6" loading="lazy">
-  </div>
+  <p>Projetos artísticos criados para empresas e marcas que desejam transformar seus espaços, fortalecer sua identidade visual e oferecer uma experiência diferenciada ao público.</p>
+  <div class="gallery" data-gallery="comerciais"></div>
 </section>
 
 <section id="personalizacao">
   <h2>Personalização</h2>
-  <div class="gallery" data-gallery="personalizacao">
-    <img src="img/personalizacao/personalizacao-1.jpg" alt="personalizacao-1" loading="lazy">
-    <img src="img/personalizacao/personalizacao-2.jpg" alt="personalizacao-2" loading="lazy">
-    <img src="img/personalizacao/personalizacao-3.jpg" alt="personalizacao-3" loading="lazy">
-    <img src="img/personalizacao/personalizacao-4.jpg" alt="personalizacao-4" loading="lazy">
-    <img src="img/personalizacao/personalizacao-5.jpg" alt="personalizacao-5" loading="lazy">
-    <img src="img/personalizacao/personalizacao-6.jpg" alt="personalizacao-6" loading="lazy">
-    <img src="img/personalizacao/personalizacao-7.jpg" alt="personalizacao-7" loading="lazy">
-    <img src="img/personalizacao/personalizacao-8.png" alt="personalizacao-8" loading="lazy">
-  </div>
-</section>
-
-<section id="telas">
-  <h2>Telas</h2>
-  <div class="gallery" data-gallery="telas">
-    <img src="img/telas/tela-1.jpg" alt="tela-1" loading="lazy">
-    <img src="img/telas/tela-2.jpg" alt="tela-2" loading="lazy">
-    <img src="img/telas/tela-3.jpg" alt="tela-3" loading="lazy">
-    <img src="img/telas/tela-4.jpg" alt="tela-4" loading="lazy">
-  </div>
+  <p>Pinturas personalizadas desenvolvidas sob medida, pensadas para integrar arte, arquitetura e propósito, valorizando cada ambiente de forma única.</p>
+  <div class="gallery" data-gallery="personalizacao"></div>
 </section>
 
 <section id="oficinas">
   <h2>Oficinas</h2>
   <div class="oficinas-texto">
     <p>
-      Tuane ministra aulas e oficinas de muralismo, graffiti e pintura em tela,
-      voltadas para iniciantes e para quem deseja aprofundar técnicas.
+      Tuane ministra aulas e oficinas de pintura e muralismo, voltadas para iniciantes e para quem deseja desenvolver técnicas, estimular a criatividade e ampliar o repertório artístico.
     </p>
   </div>
 </section>
 
 <section id="contato">
   <h2>Contato</h2>
+  <p>Atendimento em Florianópolis e região.</p>
   <div class="contato">
     <div>
       <a href="https://wa.me/5548991578798" target="_blank">WhatsApp: (48) 99157-8798</a>
       <a href="https://instagram.com/tuanearte" target="_blank">Instagram: @tuanearte</a>
     </div>
-
     <div class="gallery" data-gallery="contato">
-      <img src="img/tuane/tuane-3.jpg" alt="tuane-3" loading="lazy">
+      <img src="img/tuane/tuane-3.jpg" alt="Retrato da artista visual Tuane" loading="lazy">
     </div>
   </div>
 </section>
@@ -368,7 +293,6 @@
   document.querySelectorAll('.gallery').forEach(gallery => {
     const name = gallery.dataset.gallery;
     galleries[name] = Array.from(gallery.querySelectorAll('img'));
-
     galleries[name].forEach((img, index) => {
       img.addEventListener('click', () => {
         modal.dataset.currentGallery = name;
