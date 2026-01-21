@@ -2,138 +2,76 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <title>Tuane Arte | Murais Artísticos e Pinturas Autorais</title>
 
-  <title>Tuane Arte | Murais, Telas e Arte Personalizada</title>
+  <meta name="description" content="Tuane é artista visual especializada em murais artísticos, pinturas florais e intervenções visuais para residências e espaços comerciais em Florianópolis.">
+  <meta name="keywords" content="mural artístico, arte mural, pintura artística, artista visual, Florianópolis, arte floral, murais comerciais">
+  <meta name="author" content="Tuane">
+  <meta name="robots" content="index, follow">
 
-  <meta name="description" content="Tuane é artista visual especializada em murais artísticos, telas e personalização de espaços residenciais, comerciais e institucionais.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- CANONICAL -->
   <link rel="canonical" href="https://www.tuanearte.com.br/">
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="Tuane Arte | Murais e Pintura Artística">
-  <meta property="og:description" content="Arte autoral para valorizar espaços residenciais, comerciais e institucionais.">
-  <meta property="og:image" content="https://www.tuanearte.com.br/img/tuane/tuane-5.jpg">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tuane Arte | Murais Artísticos">
+  <meta property="og:description" content="Murais artísticos e pinturas autorais para ambientes residenciais e comerciais.">
+  <meta property="og:image" content="https://www.tuanearte.com.br/img/cover.jpg">
   <meta property="og:url" content="https://www.tuanearte.com.br/">
+  <meta property="og:type" content="website">
 
-  <!-- TWITTER -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Tuane Arte | Murais e Pintura Artística">
-  <meta name="twitter:description" content="Arte autoral para valorizar ambientes.">
-  <meta name="twitter:image" content="https://www.tuanearte.com.br/img/tuane/tuane-5.jpg">
-
-  <!-- DADOS ESTRUTURADOS -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "VisualArtist",
-    "name": "Tuane",
-    "url": "https://www.tuanearte.com.br/",
-    "image": "https://www.tuanearte.com.br/img/tuane/tuane-5.jpg",
-    "description": "Artista visual especializada em murais artísticos, pintura em tela e personalização de ambientes residenciais, comerciais e institucionais.",
-    "sameAs": [
-      "https://www.instagram.com/tuanearte"
-    ],
-    "knowsAbout": [
-      "Muralismo",
-      "Pintura artística",
-      "Arte contemporânea",
-      "Personalização de ambientes"
-    ],
-    "areaServed": {
-      "@type": "Place",
-      "name": "Florianópolis e região"
-    }
-  }
-  </script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #f6f6f4;
-      color: #1a1a1a;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #222;
     }
+
     header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(246,246,244,0.95);
-      border-bottom: 1px solid #ddd;
-      z-index: 1000;
-    }
-    nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 14px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      text-decoration: none;
-      color: #1a1a1a;
-      margin-left: 18px;
-      font-size: 12px;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-    }
-    nav strong a { color: inherit; }
-    .hero {
-      min-height: 85vh;
-      background: url("img/tuane/tuane-5.jpg") center / cover no-repeat;
+      height: 70vh;
+      background: url("img/tuane-5.jpg") center / cover no-repeat;
       display: flex;
       align-items: center;
-      padding: 0 10%;
-      margin-top: 60px;
+      justify-content: center;
     }
-    .hero-content {
-      background: rgba(246,246,244,0.9);
-      padding: 32px;
-      max-width: 520px;
+
+    header h1 {
+      background: rgba(255,255,255,0.85);
+      padding: 20px 30px;
+      font-size: 2rem;
     }
+
     section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 48px 24px;
+      padding: 60px 8%;
     }
-    h1 { font-size: 40px; margin-bottom: 12px; }
-    h2 { font-size: 28px; margin-bottom: 16px; }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
+
+    h2 {
+      margin-bottom: 10px;
     }
-    .gallery img {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .sobre, .contato {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      align-items: center;
-    }
-    .sobre p, .oficinas-texto p {
-      font-size: 16px;
+
+    p {
+      max-width: 800px;
       line-height: 1.6;
     }
-    .contato a {
-      display: block;
-      margin-top: 12px;
-      text-decoration: none;
-      color: #1a1a1a;
-      font-weight: 500;
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
     }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* MODAL */
     .modal {
       display: none;
       position: fixed;
@@ -141,51 +79,45 @@
       background: rgba(0,0,0,0.9);
       align-items: center;
       justify-content: center;
-      z-index: 3000;
+      z-index: 999;
     }
-    .modal.active { display: flex; }
+
     .modal img {
       max-width: 90%;
       max-height: 85%;
-      border-radius: 8px;
     }
-    .modal-btn {
+
+    .modal.active {
+      display: flex;
+    }
+
+    .nav {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      font-size: 36px;
+      font-size: 40px;
       color: #fff;
-      background: none;
-      border: none;
       cursor: pointer;
+      user-select: none;
       padding: 20px;
     }
-    .prev { left: 10px; }
-    .next { right: 10px; }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
+
+    .prev { left: 0; }
+    .next { right: 0; }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 35px;
       color: #fff;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 26px;
-      text-decoration: none;
-      z-index: 4000;
+      cursor: pointer;
     }
+
     footer {
       text-align: center;
-      padding: 40px;
-      border-top: 1px solid #ddd;
-      font-size: 14px;
-    }
-    @media (max-width: 768px) {
-      .sobre, .contato { grid-template-columns: 1fr; }
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
@@ -193,135 +125,124 @@
 <body id="topo">
 
 <header>
-  <nav>
-    <strong><a href="#topo">Tuane Arte</a></strong>
-    <div>
-      <a href="#sobre">Sobre</a>
-      <a href="#murais">Murais</a>
-      <a href="#comerciais">Trabalhos Comerciais</a>
-      <a href="#personalizacao">Personalização</a>
-      <a href="#telas">Telas</a>
-      <a href="#oficinas">Oficinas</a>
-      <a href="#contato">Contato</a>
-    </div>
-  </nav>
+  <h1>Tuane Arte</h1>
 </header>
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>Murais artísticos e pintura personalizada para ambientes</h1>
-    <p>Arte autoral para valorizar espaços residenciais, comerciais e institucionais.</p>
-  </div>
-</section>
 
 <section id="sobre">
   <h2>Sobre</h2>
-  <div class="sobre">
-    <div>
-      <p>
-        Tuane é artista visual especializada em murais artísticos, pinturas em tela e projetos de personalização para ambientes residenciais, comerciais e institucionais.
-      </p>
-      <p>
-        Seu trabalho integra arte, natureza e arquitetura, criando composições que transformam espaços, fortalecem a identidade do ambiente e tornam os locais mais acolhedores.
-      </p>
-    </div>
-    <div class="gallery" data-gallery="sobre">
-      <img src="img/tuane/tuane-1.jpg" alt="Artista visual Tuane em processo criativo" loading="lazy">
-      <img src="img/tuane/tuane-4.jpg" alt="Detalhe de mural artístico assinado por Tuane" loading="lazy">
-    </div>
-  </div>
+  <p>
+    Tuane é artista visual e desenvolve murais artísticos e pinturas autorais
+    inspiradas na natureza, com foco em flores e elementos orgânicos.
+    Seu trabalho busca transformar ambientes, criando experiências visuais
+    sensíveis e acolhedoras.
+  </p>
 </section>
 
 <section id="murais">
   <h2>Murais</h2>
-  <p>Murais artísticos desenvolvidos para residências, comércios, clínicas, condomínios e espaços institucionais, sempre respeitando a identidade do local e o diálogo com o ambiente.</p>
+  <p>Murais artísticos para residências, condomínios e espaços urbanos.</p>
+
   <div class="gallery" data-gallery="murais">
-    <!-- imagens -->
+    <img src="img/murais/mural-1.jpg" alt="Mural artístico floral em residência">
+    <img src="img/murais/mural-2.jpg" alt="Mural pintado à mão em parede externa">
+    <img src="img/murais/mural-3.jpg" alt="Detalhe de mural artístico floral">
   </div>
 </section>
 
 <section id="comerciais">
   <h2>Trabalhos Comerciais</h2>
-  <p>Projetos artísticos criados para empresas e marcas que desejam transformar seus espaços, fortalecer sua identidade visual e oferecer uma experiência diferenciada ao público.</p>
-  <div class="gallery" data-gallery="comerciais"></div>
+  <p>Pinturas e murais desenvolvidos para espaços comerciais e institucionais.</p>
+
+  <div class="gallery" data-gallery="comerciais">
+    <img src="img/comerciais/comercial-1.jpg" alt="Mural artístico em espaço comercial">
+    <img src="img/comerciais/comercial-2.jpg" alt="Pintura mural em clínica">
+  </div>
 </section>
 
 <section id="personalizacao">
   <h2>Personalização</h2>
-  <p>Pinturas personalizadas desenvolvidas sob medida, pensadas para integrar arte, arquitetura e propósito, valorizando cada ambiente de forma única.</p>
-  <div class="gallery" data-gallery="personalizacao"></div>
-</section>
+  <p>Projetos personalizados conforme o ambiente e a proposta do cliente.</p>
 
-<section id="oficinas">
-  <h2>Oficinas</h2>
-  <div class="oficinas-texto">
-    <p>
-      Tuane ministra aulas e oficinas de pintura e muralismo, voltadas para iniciantes e para quem deseja desenvolver técnicas, estimular a criatividade e ampliar o repertório artístico.
-    </p>
+  <div class="gallery" data-gallery="personalizacao">
+    <img src="img/personalizacao/personalizado-1.jpg" alt="Pintura artística personalizada">
+    <img src="img/personalizacao/personalizado-2.jpg" alt="Arte mural sob medida">
   </div>
 </section>
 
 <section id="contato">
   <h2>Contato</h2>
-  <p>Atendimento em Florianópolis e região.</p>
-  <div class="contato">
-    <div>
-      <a href="https://wa.me/5548991578798" target="_blank">WhatsApp: (48) 99157-8798</a>
-      <a href="https://instagram.com/tuanearte" target="_blank">Instagram: @tuanearte</a>
-    </div>
-    <div class="gallery" data-gallery="contato">
-      <img src="img/tuane/tuane-3.jpg" alt="Retrato da artista visual Tuane" loading="lazy">
-    </div>
-  </div>
+
+  <p>
+    📍 Florianópolis – SC<br>
+    📧 contato@tuanearte.com.br<br>
+    📱 Instagram: <a href="https://www.instagram.com/tuanearte" target="_blank">@tuanearte</a>
+  </p>
+
+  <img src="img/tuane-3.jpg" alt="Tuane artista visual" style="max-width:300px;margin-top:20px;">
 </section>
 
-<footer>© Tuane Arte</footer>
+<footer>
+  © 2026 Tuane Arte — Murais Artísticos
+</footer>
 
-<a class="whatsapp-float" href="https://wa.me/5548991578798" target="_blank">☎</a>
-
+<!-- MODAL -->
 <div class="modal" id="modal">
-  <button class="modal-btn prev">❮</button>
-  <img id="modal-img">
-  <button class="modal-btn next">❯</button>
+  <span class="close" id="close">&times;</span>
+  <span class="nav prev" id="prev">&#10094;</span>
+  <img id="modal-img" src="">
+  <span class="nav next" id="next">&#10095;</span>
 </div>
 
 <script>
-  const modal = document.getElementById('modal');
-  const modalImg = document.getElementById('modal-img');
-  const galleries = {};
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeBtn = document.getElementById("close");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
 
-  document.querySelectorAll('.gallery').forEach(gallery => {
-    const name = gallery.dataset.gallery;
-    galleries[name] = Array.from(gallery.querySelectorAll('img'));
-    galleries[name].forEach((img, index) => {
-      img.addEventListener('click', () => {
-        modal.dataset.currentGallery = name;
-        modal.dataset.currentIndex = index;
-        modalImg.src = img.src;
-        modal.classList.add('active');
-      });
+  let images = [];
+  let currentIndex = 0;
+
+  document.querySelectorAll(".gallery img").forEach((img, index, list) => {
+    img.addEventListener("click", () => {
+      images = Array.from(img.parentElement.querySelectorAll("img"));
+      currentIndex = images.indexOf(img);
+      openModal();
     });
   });
 
-  function navigate(step) {
-    const gallery = galleries[modal.dataset.currentGallery];
-    let index = parseInt(modal.dataset.currentIndex);
-    index = (index + step + gallery.length) % gallery.length;
-    modal.dataset.currentIndex = index;
-    modalImg.src = gallery[index].src;
+  function openModal() {
+    modal.classList.add("active");
+    modalImg.src = images[currentIndex].src;
   }
 
-  document.querySelector('.next').onclick = () => navigate(1);
-  document.querySelector('.prev').onclick = () => navigate(-1);
+  function closeModal() {
+    modal.classList.remove("active");
+  }
 
-  modal.addEventListener('click', e => {
-    if (e.target === modal) modal.classList.remove('active');
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    modalImg.src = images[currentIndex].src;
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    modalImg.src = images[currentIndex].src;
+  }
+
+  closeBtn.onclick = closeModal;
+  prevBtn.onclick = showPrev;
+  nextBtn.onclick = showNext;
+
+  modal.addEventListener("click", e => {
+    if (e.target === modal) closeModal();
   });
 
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') modal.classList.remove('active');
-    if (e.key === 'ArrowRight') navigate(1);
-    if (e.key === 'ArrowLeft') navigate(-1);
+  document.addEventListener("keydown", e => {
+    if (!modal.classList.contains("active")) return;
+    if (e.key === "Escape") closeModal();
+    if (e.key === "ArrowLeft") showPrev();
+    if (e.key === "ArrowRight") showNext();
   });
 </script>
 
