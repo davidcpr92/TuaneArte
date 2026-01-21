@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Tuane Arte | Murais Artísticos e Pintura Personalizada para Ambientes</title>
+  <title>Murais Artísticos e Pintura em Parede | Tuane Arte</title>
 
-  <meta name="description" content="Artista muralista especializada em murais artísticos, pintura em parede, telas e personalização de ambientes residenciais e comerciais. Atendimento no Brasil.">
+  <meta name="description" content="Artista muralista especializada em murais artísticos, pintura em parede e personalização de ambientes residenciais e comerciais. Atende Florianópolis, SC e Brasil.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CANONICAL -->
@@ -13,7 +13,7 @@
 
   <!-- OPEN GRAPH -->
   <meta property="og:title" content="Tuane Arte | Murais Artísticos e Pintura Personalizada">
-  <meta property="og:description" content="Murais artísticos, pintura em parede e personalização de ambientes residenciais e comerciais.">
+  <meta property="og:description" content="Murais artísticos, pintura mural e personalização de ambientes comerciais e residenciais.">
   <meta property="og:image" content="https://www.tuanearte.com.br/img/tuane/tuane-5.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
@@ -22,10 +22,10 @@
   <!-- TWITTER -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Tuane Arte | Murais Artísticos">
-  <meta name="twitter:description" content="Arte mural e pintura artística para transformar ambientes.">
+  <meta name="twitter:description" content="Arte mural e pintura personalizada para transformar ambientes.">
   <meta name="twitter:image" content="https://www.tuanearte.com.br/img/tuane/tuane-5.jpg">
 
-  <!-- DADOS ESTRUTURADOS -->
+  <!-- SCHEMA AVANÇADO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,13 +33,21 @@
     "name": "Tuane Arte",
     "url": "https://www.tuanearte.com.br/",
     "image": "https://www.tuanearte.com.br/img/tuane/tuane-5.jpg",
-    "description": "Artista muralista especializada em murais artísticos, pintura em parede e personalização de ambientes residenciais e comerciais.",
+    "description": "Artista muralista especializada em murais artísticos, pintura em parede e personalização de ambientes.",
     "sameAs": [
       "https://www.instagram.com/tuanearte"
     ],
     "areaServed": {
       "@type": "Country",
       "name": "Brasil"
+    },
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Murais artísticos e pintura personalizada",
+        "serviceType": "Pintura mural, arte em parede e personalização de ambientes"
+      }
     }
   }
   </script>
@@ -94,7 +102,7 @@
     .hero-content {
       background: rgba(246,246,244,0.9);
       padding: 32px;
-      max-width: 540px;
+      max-width: 560px;
     }
 
     section {
@@ -208,33 +216,41 @@
 
 <section class="hero">
   <div class="hero-content">
-    <h1>Murais artísticos e pintura personalizada</h1>
-    <p>Arte sob medida para transformar ambientes residenciais e comerciais.</p>
+    <h1>Murais artísticos e pintura em parede sob medida</h1>
+    <p>
+      Projetos personalizados para residências, clínicas, empresas e espaços comerciais.
+      Atendimento em Florianópolis, Santa Catarina e outras regiões do Brasil.
+    </p>
   </div>
 </section>
 
 <section id="sobre">
-  <h2>Artista muralista</h2>
+  <h2>Artista muralista profissional</h2>
   <div class="sobre">
     <div>
       <p>
         Tuane é artista visual especializada em murais artísticos, pintura em parede
-        e personalização de ambientes.
+        e personalização de ambientes internos e externos.
       </p>
       <p>
-        Desenvolve projetos para residências, clínicas, empresas e espaços comerciais,
-        criando arte que valoriza o ambiente e a identidade do espaço.
+        Desenvolve projetos exclusivos para residências, clínicas, empresas,
+        condomínios e espaços comerciais, valorizando o ambiente através da arte.
       </p>
     </div>
 
     <div class="gallery" data-gallery="sobre">
-      <img src="img/tuane/tuane-1.jpg" alt="artista muralista pintura artística" loading="lazy">
-      <img src="img/tuane/tuane-4.jpg" alt="processo de pintura mural artística" loading="lazy">
+      <img src="img/tuane/tuane-1.jpg" alt="artista muralista durante pintura artística em parede" loading="lazy">
+      <img src="img/tuane/tuane-4.jpg" alt="processo de pintura mural personalizada" loading="lazy">
     </div>
   </div>
 </section>
 
-<!-- DEMAIS SEÇÕES MANTIDAS -->
+<!-- SEO INVISÍVEL (INTENÇÃO DE BUSCA) -->
+<div style="position:absolute; left:-9999px;">
+  mural artístico personalizado, pintura mural comercial, artista muralista profissional,
+  pintura em parede para clínicas, murais artísticos residenciais,
+  arte mural para empresas, pintura artística em ambientes
+</div>
 
 <footer>© Tuane Arte</footer>
 
@@ -260,8 +276,16 @@
   });
 
   modal.onclick = e => { if (e.target === modal) modal.classList.remove('active'); };
-  document.querySelector('.next').onclick = () => modalImg.src = images[++index % images.length].src;
-  document.querySelector('.prev').onclick = () => modalImg.src = images[(--index + images.length) % images.length].src;
+
+  document.querySelector('.next').onclick = () => {
+    index = (index + 1) % images.length;
+    modalImg.src = images[index].src;
+  };
+
+  document.querySelector('.prev').onclick = () => {
+    index = (index - 1 + images.length) % images.length;
+    modalImg.src = images[index].src;
+  };
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') modal.classList.remove('active');
