@@ -476,7 +476,14 @@
   <button type="submit">Enviar mensagem</button>
 
 </form>
-
+      
+<div class="form-sucesso" id="form-sucesso">
+  <h3>Mensagem enviada ✨</h3>
+  <p>
+    Obrigada pelo contato!  
+    Em breve retorno para conversarmos sobre o seu projeto.
+  </p>
+</div>
       <p>
         WhatsApp: <a href="https://wa.me/5548991578798" target="_blank">(48) 99157-8798</a><br>
         Instagram: <a href="https://instagram.com/tuanearte" target="_blank">@tuanearte</a>
@@ -539,6 +546,28 @@
     if (e.key === 'Escape') modal.classList.remove('active');
     if (e.key === 'ArrowRight') navigate(1);
     if (e.key === 'ArrowLeft') navigate(-1);
+  });
+
+  // 👇 MENSAGEM DE SUCESSO DO FORMULÁRIO
+  const form = document.querySelector('.form-contato');
+  const successMessage = document.getElementById('form-sucesso');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.style.display = 'none';
+      successMessage.style.display = 'block';
+      form.reset();
+    } else {
+      alert('Ocorreu um erro. Tente novamente mais tarde.');
+    }
   });
 </script>
 
