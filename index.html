@@ -257,6 +257,54 @@
         grid-template-columns: 1fr;
       }
     }
+    /* FORMULÁRIO DE CONTATO */
+
+.form-contato {
+  display: grid;
+  gap: 14px;
+  max-width: 420px;
+  margin-top: 20px;
+}
+
+.form-contato input,
+.form-contato textarea,
+.form-contato select {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus,
+.form-contato select:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+
+.form-contato textarea {
+  resize: vertical;
+}
+
+.form-contato button {
+  margin-top: 6px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.form-contato button:hover {
+  opacity: 0.85;
+}
   </style>
 </head>
 
@@ -417,6 +465,17 @@
         Entre em contato para orçamentos, projetos personalizados,
         murais artísticos e pinturas sob encomenda.
       </p>
+<form action="https://formspree.io/f/mvzkpbpo" method="POST" class="form-contato">
+
+  <input type="text" name="nome" placeholder="Nome" required>
+
+  <input type="email" name="email" placeholder="E-mail" required>
+
+  <textarea name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+
+  <button type="submit">Enviar mensagem</button>
+
+</form>
 
       <p>
         WhatsApp: <a href="https://wa.me/5548991578798" target="_blank">(48) 99157-8798</a><br>
