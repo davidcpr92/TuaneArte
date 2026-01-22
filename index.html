@@ -305,6 +305,15 @@
 .form-contato button:hover {
   opacity: 0.85;
 }
+    /* MENSAGEM DE SUCESSO DO FORMULÁRIO */
+.form-sucesso {
+  display: none;
+  margin-top: 20px;
+  padding: 16px;
+  background: #f0f0ee;
+  border-radius: 8px;
+  font-size: 14px;
+}
   </style>
 </head>
 
@@ -552,23 +561,29 @@
   const form = document.querySelector('.form-contato');
   const successMessage = document.getElementById('form-sucesso');
 
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
+  if (form && successMessage) {
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
 
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        successMessage.style.display = 'block';
+        form.reset();
+
+        // opcional: esconder após 6 segundos
+        setTimeout(() => {
+          successMessage.style.display = 'none';
+        }, 6000);
+      } else {
+        alert('Ocorreu um erro. Tente novamente mais tarde.');
+      }
     });
-
-    if (response.ok) {
-      form.style.display = 'none';
-      successMessage.style.display = 'block';
-      form.reset();
-    } else {
-      alert('Ocorreu um erro. Tente novamente mais tarde.');
-    }
-  });
+  }
 </script>
 
 </body>
