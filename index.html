@@ -152,19 +152,43 @@
     }
 
     .contato {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      align-items: center;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
 
-    .contato a {
-      display: block;
-      margin-top: 12px;
-      text-decoration: none;
-      color: #1a1a1a;
-      font-weight: 500;
-    }
+.contato-texto {
+  max-width: 500px;
+}
+
+.contato a {
+  display: block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.contato-imagem img {
+  max-width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .contato {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contato-texto {
+    max-width: 100%;
+  }
+}
 
     .oficinas-texto {
       max-width: 600px;
@@ -390,14 +414,24 @@
   Entre em contato para orçamentos, projetos personalizados, murais artísticos
   e pinturas sob encomenda.
 </p>
+  <section id="contato">
+  <h2>Contato</h2>
+
   <div class="contato">
-    <div>
-      <a href="https://wa.me/5548991578798" target="_blank">WhatsApp: (48) 99157-8798</a>
-      <a href="https://instagram.com/tuanearte" target="_blank">Instagram: @tuanearte</a>
+    <div class="contato-texto">
+      <p>
+        Entre em contato para orçamentos, projetos personalizados,
+        murais artísticos e pinturas sob encomenda.
+      </p>
+
+      <p>
+        WhatsApp: <a href="https://wa.me/5548991578798" target="_blank">(48) 99157-8798</a><br>
+        Instagram: <a href="https://instagram.com/tuanearte" target="_blank">@tuanearte</a>
+      </p>
     </div>
 
-    <div class="gallery" data-gallery="contato">
-      <img src="img/tuane/tuane-3.jpg" alt="tuane-3" loading="lazy">
+    <div class="contato-imagem">
+      <img src="img/tuane/tuane-3.jpg" alt="Tuane Arte em mural artístico" loading="lazy">
     </div>
   </div>
 </section>
