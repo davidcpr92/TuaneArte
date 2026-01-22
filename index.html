@@ -504,7 +504,11 @@
   </p>
 </div>
       <p>
-        WhatsApp: <a href="https://wa.me/5548991578798" target="_blank">(48) 99157-8798</a><br>
+        <a class="whatsapp-float"
+   href="https://wa.me/5548991578798"
+   target="_blank"
+   onclick="gtag('event', 'whatsapp_click', { 'event_category': 'contato' });">
+☎</a>
         Instagram: <a href="https://instagram.com/tuanearte" target="_blank">@tuanearte</a>
       </p>
     </div>
@@ -582,8 +586,12 @@
       });
 
       if (response.ok) {
-        successMessage.style.display = 'block';
-        form.reset();
+  gtag('event', 'form_enviado', {
+    'event_category': 'contato'
+  });
+
+  successMessage.style.display = 'block';
+  form.reset();
 
         // opcional: esconder após 6 segundos
         setTimeout(() => {
